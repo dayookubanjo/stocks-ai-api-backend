@@ -39,7 +39,13 @@ RUN python -m venv /py && \
 
     # 755 is a super user permission that allows django-user make any changes 
 
-ENV PATH="/py/bin:$PATH"
-# ENV JAVA_HOME = "/usr/lib/jvm/java-11-openjdk-amd64"
+# ENV PATH="/py/bin:$PATH"
+# # ENV JAVA_HOME = "/usr/lib/jvm/java-11-openjdk-amd64"
+
+# USER django-user
+
+ENV PATH="/scripts:/py/bin:$PATH"
 
 USER django-user
+
+CMD ["run.sh"]
