@@ -16,5 +16,6 @@ requests==2.25.1
 s3transfer==0.3.4
 whitenoise==5.2.0 
 scikit-learn
+uwsgi>=2.0.20,<2.1
 # findspark
 # pyspark
